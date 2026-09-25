@@ -1,0 +1,9 @@
+requests>=2.31.0
+numpy>=1.26.0
+scikit-learn>=1.4.0    # Isolation Forest — primary drift detector (src/detector_ml.py)
+qdrant-client>=1.9.0   # only needed if you use the real Qdrant backend (see src/memory.py)
+pandas>=2.0.0          # used by report/demo tooling for the anomaly-score chart
+
+# --- test dependencies ---
+pytest>=8.0.0
+requests-mock>=1.12.0
